@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>VinPstrn</title>
+</head>
+<body>
+
+    <header id="header-tab" class="header">
+
+        <nav class="navbar">
+            <span class="navbar-logo">
+                <a href="#"><span>Vin</span>pstrn</a>
+            </span>
+
+            <ul class="navbar-main">
+                <li><a href="#skills-tab">Skills</a></li>
+                <li><a href="#projects-tab">Projects</a></li>
+                <li><a href="#contact-tab">Contact</a></li>
+            </ul>
+
+            <span class="slide-bar" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </span>
+        </nav>
+
+        <div id="slide-menu">
+            <span id="close-btn" onclick="closeSlideMenu()">&times;</span>
+            <a href="#skills-tab">Skills</a>
+            <a href="#projects-tab">Projects</a>
+            <a href="#contact-tab">Contacts</a>
+        </div>
+
+        <div class="header-heading">
+            <h1>Welcome to my website</h1>
+            <p>Hi! I'm Marvin an aspiring front-end web developer</p>
+            <a href="#skills" class="btn btn-heading">Explore</a>
+        </div>
+    </header>
+
+    <section id="skills-tab" class="section-skills">
+        <div class="main-heading">
+            <h2 class="skills-heading">My skills</h2>
+        </div>
+        <div class="heading-description">
+            <p>This is how I honestly rate my knowledge based on percentage</p>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-bar-container">
+                <div class="progress-bar-title css3">CSS3/SASS</div>
+                <div class="progress-bar-percentage p-css3"></div>
+                <div class="progress-bar-total t-css3"> 75% </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-bar-container">
+                <div class="progress-bar-title html5">HTML5</div>
+                <div class="progress-bar-percentage p-html5"></div>
+                <div class="progress-bar-total t-html5"> 70% </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-bar-container">
+                <div class="progress-bar-title jscript">JAVASCRIPT</div>
+                <div class="progress-bar-percentage p-js"></div>
+                <div class="progress-bar-total t-js"> 55% </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-bar-container">
+                <div class="progress-bar-title ps">PHOTOSHOP</div>
+                <div class="progress-bar-percentage p-ps"></div>
+                <div class="progress-bar-total t-ps"> 75% </div>
+            </div>
+        </div>
+
+        <div class="main-heading main-heading-others">
+            <h2 class="skills-heading">Others</h2>
+        </div>
+
+        <div class="skills">
+            <div class="skills-box">
+                <img src="./icons/iconmonstr-smartphone-16-240.png" alt="Full responsive website">
+                <div>
+                    <p>Fully responsive website</p>
+                </div>
+            </div>
+            <div class="skills-box">
+                <img src="./icons/iconmonstr-chrome-1-240.png" alt="Cross browser compatibility">
+                <div>
+                    <p>Cross browser compatibility</p>
+                </div>
+            </div>
+            <div class="skills-box">
+                <img src="./icons/iconmonstr-color-fan-2-240.png" alt="Eye for design">
+                <div>
+                    <p>Eye for design</p>
+                </div>
+            </div>
+            <div class="skills-box">
+                <img src="./icons/iconmonstr-code-2-240.png" alt="Passion for coding">
+                <div>
+                    <p>Passion for coding</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-tab" class="section-projects">
+        <div class="main-heading" id="projects-heading-1">
+            <h2 class="projects-heading">My projects</h2>
+        </div>
+
+        <div class="section-projects-row">
+            <div class="section-projects-col">
+                
+            </div>
+            <div class="section-projects-col">
+                
+            </div>
+            <div class="section-projects-col">
+                
+            </div>
+            <div class="section-projects-col">
+                
+            </div>
+            <div class="section-projects-col">
+                
+            </div>
+            <div class="section-projects-col">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact-tab" class="footer">
+        <div class="box">
+           <a href="#header-tab"><i class="fas fa-chevron-up fa-2x"></i></a> 
+        </div>
+        <div class="footer-heading">
+            <h2>Thank you visiting!</h2>
+        </div>
+        <div class="footer-description">
+            <p>You can contact me on my facebook account</p>
+        </div>
+        <div class="facebook">
+           <a href="#"><i class="fab fa-facebook fa-2x"></i></a> 
+        </div>
+        <div class="vinpstrn">
+            <p>Vinpstrn &copy; 2018</p>
+        </div>
+    </footer>
+
+    <script src="./jscript.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.progress-bar', {
+            duration: 1500,
+            origin: 'bottom',
+            distance: '5rem'
+        });
+        sr.reveal('.skills-box', {
+            duration: 1500,
+            origin: 'left',
+            distance: '15rem'
+        });
+    </script>
+    <script>
+        $(function() {
+        // Smooth Scrolling
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                scrollTop: target.offset().top
+                }, 700);
+                return false;
+            }
+            }
+        });
+        });
+    </script>
+</body>
+</html>
