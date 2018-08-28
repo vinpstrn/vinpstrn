@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>ScrollReveal({ reset: true });</script>
+    <title>VinPstrn</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="nav">
+            <div class="nav__logo-box">
+                <span class="nav__logo">Vin<span>pstrn</span></span>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <i class="fas fa-bars fa-3x hamburger__icon"></i>
+        </div>
+
+        <div class="sidenav">
+            <span class="sidenav__close">&times;</span>
+            <ul class="sidenav__list">
+                <li class="sidenav__item"><a href="#skills" class="sidenav__link" onclick="closeMenu()">Skills</a></li>
+                <li class="sidenav__item"><a href="#projects" class="sidenav__link" onclick="closeMenu()">Projects</a></li>
+                <li class="sidenav__item"><a href="#contact" class="sidenav__link" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="heading-box">
+            <h1 class="main-heading">
+                <div class="main-heading__primary">Welcome to my website</div>
+                <div class="main-heading__secondary">Hi, Im Marvin Dale an anspiring <span class="main-heading__secondary--1">front-end web developer</span></div>
+            </h1>
+            <a href="#skills" class="btn">Explore</a>
+        </div>
+
+        <div class="arrow-down">
+            <a href="#skills"><i class="fas fa-angle-down fa-4x"></i></a>
+        </div>
+    </header>
+
+    <section id="skills">
+
+        <div class="section-heading">
+            <h2 class="section-heading__title">SKILLS</h2>
+            <p class="section-heading__description">This is how I honestly rate my knowledge based on percentage</p>
+        </div>
+        <div class="skill-box">
+            <div class="skill-box__wrapper">
+                <span class="skill-box__title">Html5</span>
+                <div class="skill-box__percentage">
+                    <span class="html5"></span>
+                </div>
+                <span class="skill-box__percent">80%</span>
+            </div>
+            <div class="skill-box__wrapper">
+                <span class="skill-box__title">CSS3/Sass</span>
+                <div class="skill-box__percentage">
+                    <span class="css3"></span>
+                </div>
+                <span class="skill-box__percent">85%</span>
+            </div>
+            <div class="skill-box__wrapper">
+                <span class="skill-box__title">Javascript</span>
+                <div class="skill-box__percentage">
+                    <span class="js"></span>
+                </div>
+                <span class="skill-box__percent">50%</span>
+            </div>
+            <div class="skill-box__wrapper">
+                <span class="skill-box__title">Jquery</span>
+                <div class="skill-box__percentage">
+                    <span class="jquery"></span>
+                </div>
+                <span class="skill-box__percent">40%</span>
+            </div>
+            <div class="skill-box__wrapper">
+                <span class="skill-box__title">Photoshop</span>
+                <div class="skill-box__percentage">
+                    <span class="ps"></span>
+                </div>
+                <span class="skill-box__percent">75%</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+
+        <div class="section-heading">
+            <h2 class="section-heading__title section-heading__title--services">SERVICES</h2>
+        </div>
+         <div class="webdev">
+            <div class="webdev__box">
+                <img src="icons/tablet-phone-and-browser.svg" class="webdev__responsive" alt="Full responsive website">
+                <span>Fully Responsive Website</span>
+            </div>
+            <div class="webdev__box">
+                <img src="icons/website-design-symbol.svg" class="webdev__design" alt="Eye for design">
+                <span>Eye for design</span>
+            </div>
+            <div class="webdev__box">
+                <img src="icons/browser-with-cross.svg" class="webdev__browser" alt="Cross browser compatibility">
+                <span>Cross browser compatibility</span>
+            </div>
+            <div class="webdev__box">
+                <img src="icons/code.svg" class="webdev__coding" alt="Passion for coding">
+                <span>Passion for coding</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-heading">
+            <h2 class="section-heading__title">PROJECTS</h2>
+        </div>
+
+        <div class="myprojects">
+            <div class="myprojects__item">
+                <img src="img/letsgetinked.jpg" class="myprojects__photo" alt="LetsGetInked"/>
+                <div class="myprojects__details">
+                    <p class="myprojects__caption">LetsGetInked</p>
+                    <a href="https://vinpstrn.github.io/LetsGetInked/" target="_blank" class="myprojects__link"><button class="openModal">View</button></a>
+                </div>
+            </div>
+            <div class="myprojects__item">
+                <img src="img/Weflight.jpg" class="myprojects__photo" alt="Weflight"/>
+                <div class="myprojects__details">
+                    <p class="myprojects__caption">Weflight</p>
+                    <a href="https://vinpstrn.github.io/weflight/" target="_blank" class="myprojects__link"><button class="openModal">View</button></a>
+                </div>
+            </div>
+            <div class="myprojects__item">
+                <img src="img/Mamba-Mentality2.jpg" class="myprojects__photo" alt="James Harden"/>
+                <div class="myprojects__details">
+                    <p class="myprojects__caption">Fan art</p>
+                    <button class="openModal try" id="openKyrie2">View</button>
+                </div>
+            </div>
+            <div class="myprojects__item">
+                <img src="img/Kobe.jpg" class="myprojects__photo" alt="Kobe Bryant"/>
+                <div class="myprojects__details">
+                    <p class="myprojects__caption">Fan art</p>
+                    <button class="openModal try" id="openKobe">View</button>
+                </div>
+            </div>
+            <div class="myprojects__item">
+                <img src="img/Kyrie-Irving-2.jpg" class="myprojects__photo" alt="Kyie Irving"/>
+                <div class="myprojects__details">
+                    <p class="myprojects__caption">Fan art</p>
+                    <button class="openModal try" id="openKyrie">View</button>
+                </div>
+            </div>
+            <div class="myprojects__item">
+                <img src="img/James-Harden-MVP.jpg" class="myprojects__photo" alt="James Harden"/>
+                <div class="myprojects__details">
+                    <p class="myprojects__caption">Fan art</p>
+                    <button class="openModal try" id="openHarden">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal escapeModal" id="kobe">
+            <div class="modal__content">
+                <img src="img/Mamba-Mentality2.jpg" class="modal__photo" alt="Kyrie2"/>
+                <span class="modal__close" id="closeKyrie2">&times;</span>
+            </div>
+    </div>
+    <div class="modal escapeModal" id="kobe">
+        <div class="modal__content">
+            <img src="img/Kobe.jpg" class="modal__photo" alt="Kobe"/>
+            <span class="modal__close" id="closeKobe">&times;</span>
+        </div>
+    </div>
+    <div class="modal escapeModal" id="kyrie">
+        <div class="modal__content">
+            <img src="img/Kyrie-Irving-2.jpg" class="modal__photo" alt="Kyrie"/>
+            <span class="modal__close" id="closeKyrie">&times;</span>
+        </div>
+    </div>
+    <div class="modal escapeModal" id="harden">
+        <div class="modal__content">
+            <img src="img/James-Harden-MVP.jpg" class="modal__photo" alt="Harden"/>
+            <span class="modal__close" id="closeHarden">&times;</span>
+        </div>
+    </div>
+
+    <footer id="contact" class="footer">
+        <a href="#header"><i class="fas fa-angle-double-up fa-4x footer__up"></i></a>
+        <p class="footer__ty">Thank you for visiting!</p>
+        <p class="footer__contact">You can contact me on my facebook account</p>
+        <a href="https://www.facebook.com/VinPstrn" class="footer__fb-link" target="_blank"><i class="fab fa-facebook fa-3x footer__fb"></i></a>
+        <p class="footer__vinpstrn">Design and created by Vinpstrn</p>
+        <p class="footer__copyright">Copyright &copy; 2018</p>
+    </footer>
+
+<script src="jscript.js"></script>
+<script>
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+  
+      if (this.hash !== "") {
+        event.preventDefault();
+  
+        var hash = this.hash;
+  
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.skill-box', {
+        duration: 2500,
+        origin: 'bottom',
+        distance: '8rem'
+    });
+    sr.reveal('.webdev__box', {
+        duration: 2500,
+        origin: 'right',
+        distance: '20rem'
+    });
+    sr.reveal('.myprojects__item', {
+        duration: 2500,
+        origin: 'left',
+        distance: '20rem',
+        viewFactor: '.3'
+    });
+</script>
+</body>
+</html>
